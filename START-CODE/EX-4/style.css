@@ -1,0 +1,83 @@
+body{
+    height: 100vh;
+}
+
+header{
+    background-color: rgb(1, 1, 88);
+    color: aliceblue;
+    height: 120px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 0 29px;
+}
+
+.logo img {
+    max-height: 120px;
+    width: auto;
+    display: block;
+}
+
+.searchBar {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.nav{
+    background-color: darkgray;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.overview {
+    padding: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.gpa {
+    background-color: darkgray;
+    color: rgb(1, 1, 88);
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.attendance {
+    background-color: darkgray;
+    color: rgb(1, 1, 88);
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.rank {
+    background-color: darkgray;
+    color: rgb(1, 1, 88);
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.statistic {
+    background-color: darkgray;
+    color: rgb(1, 1, 88);
+    border-radius: 10px;
+    grid-column: span 3;
+    grid-row: span 3;
+    padding-left: 20px;
+}
