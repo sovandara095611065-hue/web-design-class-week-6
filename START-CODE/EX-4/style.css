@@ -1,5 +1,9 @@
-body{
-    height: 100vh;
+body {
+    height: 85vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;   
 }
 
 header{
@@ -26,22 +30,48 @@ header{
     border-radius: 10px;
     border: 1px solid black;
     width: 50%;
+    padding-left: 20px;
 }
 
 main {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .nav{
     background-color: darkgray;
+    display: grid;
+    grid-template-rows: 300px auto;
 }
 
 .nav ul {
     list-style: none;
-    padding: 20px;
+    padding: 40px;
     margin: 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.nav ul li{
+    padding: 10px;
+}
+
+.nav ul li:hover {
+    background-color: rgb(141, 139, 139);
+    border-radius: 10px;
+    transform: translateY(-2px);
+}
+
+.logOut{
+    padding: 20px;
+    margin: auto auto 20px auto;
+    text-align: center;
+    background-color: rgb(1, 1, 88);
+    color: aliceblue;
+    border-radius: 10px;
+    width: 50%;
+    justify-items: center;
 }
 
 .overview {
@@ -79,5 +109,58 @@ main {
     border-radius: 10px;
     grid-column: span 3;
     grid-row: span 3;
-    padding-left: 20px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-scores {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    overflow: hidden;
+}
+
+.courses-scores h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, auto);
+    column-gap: 3rem;
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.box>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.box h4,
+.box p {
+    margin: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .courses {
+    align-items: flex-start;
+}
+
+.box .courses h4,
+.box .courses p {
+    justify-content: flex-start;
 }
